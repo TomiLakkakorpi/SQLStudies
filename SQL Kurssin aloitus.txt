@@ -1,0 +1,38 @@
+SQL Kurssin aloitus
+Connection string:		Ota osoite talteen asennusvaiheessa
+Server install log folder:	Mahdolliset ongelmat tallennetaan Logiin
+Installation media folder:	Asennuksen EXE:n sijainti
+Connect now			Yritetään käynnistää ja ottaa yhteys tietokantapalvelimeen
+
+
+Valitse SSMS
+
+Connection String		Server=localhost\SQLEXPRESS03;Database=master;Trusted_Connection=True;
+EXE: 				D:\SQL2025\Express_ENU
+
+
+Database -tyypit
+Key-value databases		-
+Columnar Database		Kun tiedon järjestys on selvillä
+Dokumentti -pohjainen		Vapaamuotoinen mutta kuitenkin myös järjestystä
+Graafinen tietokanta		Kun tietojen väliset yhteydet tärkeitä
+
+Muistiinpanot
+- Isoilla/pienillä kirjaimilla ei väliä
+- Komennot voi jakaa useammalle riville
+
+- Tyhjän arvon ja NULL -ero
+1 ---> 1 /a /o
+'' --> /a /o
+NULL --> /o
+
+/a kertoo että sitä ennen olevaa teksti/merkit ovat data
+/o päättää tietoalueen
+
+Yleensä jos tietoa ei ole, se nullataan --> helpompaa backendissä
+
+Selectiin aina lisäksi TOP jos arvojen määrä ylittää tuhannen, voi muutoin kaataa tietokannan
+
+JOIN
+- Yleensä käytetään LEFT JOIN --> eli on "päätaulu" johon tulee lisää tietoa toisesta taulusta
+- Kaksi taulua voidaan yhdistään vain jos molemmissa tauluissa on samaa tietoa, eli Yleensä jokin ID
